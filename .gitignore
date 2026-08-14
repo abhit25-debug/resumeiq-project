@@ -1,0 +1,79 @@
+# ==============================
+# Python
+# ==============================
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+backend/.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python build files
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# ==============================
+# Node / React / Vite
+# ==============================
+
+node_modules/
+frontend/node_modules/
+
+# Vite build
+frontend/dist/
+dist/
+dist-ssr/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==============================
+# Environment / Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+# IDE / OS
+# ==============================
+
+.vscode/
+!.vscode/extensions.json
+
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==============================
+# Python tooling
+# ==============================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==============================
+# Local files
+# ==============================
+
+*.local

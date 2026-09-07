@@ -55,11 +55,46 @@ resumeiq-project/
 │   ├── public/
 │   ├── package.json
 │   └── vite.config.js
+├── design/
+│   ├── architecture/
+│   │   ├── ResumeIQ_High_Level_Architecture.drawio
+│   │   └── ResumeIQ_High_Level_Architecture.png
+│   ├── ui/
+│   │   └── ResumeIQ_UI_Design_Abhinav_Singh.png
+│   └── README.md
 ├── docs/
 ├── docker-compose.yml
 ├── .gitignore
 └── README.md
 ```
+
+## Software Design
+
+ResumeIQ follows a modular client-server design with a React frontend communicating with a FastAPI backend through REST APIs. The backend separates request handling into routers and analysis responsibilities into focused services such as the resume parser, ATS analyzer, and JD matcher, improving cohesion and reducing coupling between components.
+
+### High-Level Architecture
+
+The editable Draw.io source and PNG export are available below.
+
+**Editable architecture source:** [ResumeIQ High-Level Architecture](design/architecture/ResumeIQ_High_Level_Architecture.drawio)
+
+![ResumeIQ High-Level Architecture](design/architecture/ResumeIQ_High_Level_Architecture.png)
+
+### UI Design
+
+The UI design presents six main application screens for Abhinav Singh: Dashboard, New Analysis, Analysis Results, History, Compare, and Profile. The screens use a consistent navigation structure, clear content hierarchy, reusable cards, and focused actions to make resume analysis and result review easier to understand.
+
+**UI design screens:** [ResumeIQ UI Design – Abhinav Singh](design/ui/ResumeIQ_UI_Design_Abhinav_Singh.png)
+
+![ResumeIQ UI Design – Abhinav Singh](design/ui/ResumeIQ_UI_Design_Abhinav_Singh.png)
+
+### Main Design Principles
+
+- **Modularity:** API routers, analysis services, and data-related components are separated into focused modules.
+- **High cohesion:** Each service has a focused responsibility, such as parsing resumes, calculating ATS-related results, or matching a resume with a job description.
+- **Low coupling:** The frontend communicates through API endpoints instead of depending directly on backend implementation details.
+- **Abstraction:** The frontend only needs the API contract and does not need to know how parsing, scoring, or matching is internally implemented.
+- **Maintainability:** Separating UI, routing, business services, and data concerns makes future features easier to add or modify.
 
 ## 25 User Stories
 
@@ -95,7 +130,7 @@ The following 25 user stories are tracked as GitHub Issues and form the project'
 
 ## Current Development Status
 
-The repository currently contains the React/Vite frontend prototype, FastAPI backend structure, resume-analysis services, JD matching service, and the GitHub issue backlog. Some planned requirements are intentionally left for subsequent development iterations.
+The repository currently contains the React/Vite frontend prototype, FastAPI backend structure, resume-analysis services, JD matching service, the GitHub issue backlog, and Assignment 2 design artifacts. Some planned requirements are intentionally left for subsequent development iterations.
 
 ## Development Workflow
 

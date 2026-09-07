@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="gLSgQgKHRNkyaW_I_IGu">
+    <mxGraphModel dx="1030" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-6" edge="1" parent="1" source="HZbUbLK8McWRBwmN03Dg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HZbUbLK8McWRBwmN03Dg-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-9" edge="1" parent="1" source="HZbUbLK8McWRBwmN03Dg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HZbUbLK8McWRBwmN03Dg-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;USER&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Upload Resume&lt;/div&gt;&lt;div&gt;Enter Job Description&lt;/div&gt;&lt;div&gt;View Results&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="320" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-8" edge="1" parent="1" source="HZbUbLK8McWRBwmN03Dg-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HZbUbLK8McWRBwmN03Dg-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;REACT FRONTEND&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Dashboard&lt;/div&gt;&lt;div&gt;Analysis&lt;/div&gt;&lt;div&gt;History&lt;/div&gt;&lt;div&gt;Compare&lt;/div&gt;&lt;div&gt;Profile&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="170" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-13" edge="1" parent="1" source="HZbUbLK8McWRBwmN03Dg-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HZbUbLK8McWRBwmN03Dg-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-15" edge="1" parent="1" source="HZbUbLK8McWRBwmN03Dg-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="HZbUbLK8McWRBwmN03Dg-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-16" edge="1" parent="1" source="HZbUbLK8McWRBwmN03Dg-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HZbUbLK8McWRBwmN03Dg-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;FASTAPI BACKEND&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;main.py&lt;/div&gt;&lt;div&gt;REST API&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="170" x="320" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;AUTH ROUTER&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;auth.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;RESUME ROUTER&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;resumes.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="345" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;ANALYSIS ROUTER&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;analysis.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-24" edge="1" parent="1" source="HZbUbLK8McWRBwmN03Dg-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HZbUbLK8McWRBwmN03Dg-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-25" edge="1" parent="1" source="HZbUbLK8McWRBwmN03Dg-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HZbUbLK8McWRBwmN03Dg-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="190" width="450" x="190" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Resume Parser&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;resume_parser.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="120" x="210" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;ATS Analyzer&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ats_analyzer.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="120" x="355" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;JD Matcher&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;jd_matcher.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="120" x="500" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;FILE STORAGE&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Resume Uploads&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="120" x="210" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;DATABASE&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;database.py&lt;/div&gt;&lt;div&gt;models.py&lt;/div&gt;&lt;div&gt;schemas.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="120" x="440" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="HZbUbLK8McWRBwmN03Dg-23" edge="1" parent="1" source="HZbUbLK8McWRBwmN03Dg-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.464;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" target="HZbUbLK8McWRBwmN03Dg-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

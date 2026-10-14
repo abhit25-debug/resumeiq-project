@@ -170,6 +170,30 @@ python -m mutmut results
 
 The strict expected-failure test should remain visible in the test report until the documented parser defect is fixed. Review test failures rather than changing expected results automatically.
 
+
+## Run the frontend (Windows PowerShell)
+
+Open a second terminal at the repository root:
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Vite prints the local development URL (normally `http://localhost:5173`). Keep the backend running in its own terminal at `http://localhost:8000`.
+
+### Frontend production build and lint
+
+From `frontend/`:
+
+```powershell
+npm run build
+npm run lint
+```
+
+The production bundle is written to `frontend/dist/`. The lint command runs ESLint.
+
 ## Current Development Status
 
 The repository contains the React/Vite frontend prototype, FastAPI backend structure, resume-analysis services, JD matching service, the GitHub issue backlog, Assignment 2 design artifacts, and the backend test suite. Some planned requirements are intentionally left for subsequent development iterations. The database-backed history, authentication, PDF report generation, full Docker configuration, and admin features remain planned.

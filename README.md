@@ -131,6 +131,10 @@ The following 25 user stories are tracked as GitHub Issues and form the project'
 | US-24 | Admin updates the skills/keyword dictionary | Admin | Admin Operations |
 | US-25 | Admin views platform usage analytics | Admin | Admin Operations |
 
+## DA-3 Demo
+
+A step-by-step live demonstration script is available in [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md).
+
 ## Testing
 
 The backend test suite is in `backend/tests/`. It includes unit, integration, regression, and mutation-hardening tests with PDF/DOCX fixtures. The latest local run recorded for this submission was **412 passed, 1 xfailed, and 1 warning**. The expected failure documents the known parser defect where text containing `C++` can also be detected as `C`.

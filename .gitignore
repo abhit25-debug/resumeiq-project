@@ -73,7 +73,10 @@ lerna-debug.log*
 .ruff_cache/
 
 # ==============================
-# Local files
+# Generated uploads and local files
 # ==============================
 
+# Do not commit uploaded resumes or other user documents
+backend/uploads/
+uploads/
 *.local

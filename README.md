@@ -46,7 +46,10 @@ resumeiq-project/
 │   ├── app/
 │   │   ├── routers/
 │   │   └── services/
-│   ├── uploads/
+│   ├── tests/
+│   │   └── fixtures/
+│   ├── pytest.ini
+│   ├── setup.cfg
 │   ├── requirements.txt
 │   ├── Dockerfile
 │   └── .env.example
@@ -82,18 +85,18 @@ The editable Draw.io source and PNG export are available below.
 
 ### UI Design
 
-The UI design presents six main application screens for Abhinav Singh: Dashboard, New Analysis, Analysis Results, History, Compare, and Profile. The screens use a consistent navigation structure, clear content hierarchy, reusable cards, and focused actions to make resume analysis and result review easier to understand.
+The UI design presents six main application screens: Dashboard, New Analysis, Analysis Results, History, Compare, and Profile. The screens use a consistent navigation structure, clear content hierarchy, reusable cards, and focused actions to make resume analysis and result review easier to understand.
 
-**UI design screens:** [ResumeIQ UI Design – Abhinav Singh](design/ui/ResumeIQ_UI_Design_Abhinav_Singh.png)
+**UI design screens:** [ResumeIQ UI Design](design/ui/ResumeIQ_UI_Design_Abhinav_Singh.png)
 
-![ResumeIQ UI Design – Abhinav Singh](design/ui/ResumeIQ_UI_Design_Abhinav_Singh.png)
+![ResumeIQ UI Design](design/ui/ResumeIQ_UI_Design_Abhinav_Singh.png)
 
 ### Main Design Principles
 
 - **Modularity:** API routers, analysis services, and data-related components are separated into focused modules.
 - **High cohesion:** Each service has a focused responsibility, such as parsing resumes, calculating ATS-related results, or matching a resume with a job description.
 - **Low coupling:** The frontend communicates through API endpoints instead of depending directly on backend implementation details.
-- **Abstraction:** The frontend only needs the API contract and does not need to know how parsing, scoring, or matching is internally implemented.
+- **Abstraction:** The frontend only needs the API contract and does not need to know how parsing, scoring, or matching are internally implemented.
 - **Maintainability:** Separating UI, routing, business services, and data concerns makes future features easier to add or modify.
 
 ## 25 User Stories
@@ -128,9 +131,48 @@ The following 25 user stories are tracked as GitHub Issues and form the project'
 | US-24 | Admin updates the skills/keyword dictionary | Admin | Admin Operations |
 | US-25 | Admin views platform usage analytics | Admin | Admin Operations |
 
+## Testing
+
+The backend test suite is in `backend/tests/`. It includes unit, integration, regression, and mutation-hardening tests with PDF/DOCX fixtures. The latest local run recorded for this submission was **412 passed, 1 xfailed, and 1 warning**. The expected failure documents the known parser defect where text containing `C++` can also be detected as `C`.
+
+### Set up the backend and run tests (Windows PowerShell)
+
+From the repository root:
+
+```powershell
+cd backend
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+python -m pytest tests -v
+```
+
+If the virtual environment already exists, activate it rather than recreating it.
+
+### Test subsets and coverage
+
+Run these from the `backend` directory with the virtual environment activated:
+
+```powershell
+python -m pytest tests -m unit -v
+python -m pytest tests -m integration -v
+python -m pytest tests -m regression -v
+python -m pytest tests --cov=app --cov-report=term-missing
+```
+
+### Mutation testing
+
+```powershell
+python -m mutmut run
+python -m mutmut results
+```
+
+The strict expected-failure test should remain visible in the test report until the documented parser defect is fixed. Review test failures rather than changing expected results automatically.
+
 ## Current Development Status
 
-The repository currently contains the React/Vite frontend prototype, FastAPI backend structure, resume-analysis services, JD matching service, the GitHub issue backlog, and Assignment 2 design artifacts. Some planned requirements are intentionally left for subsequent development iterations.
+The repository contains the React/Vite frontend prototype, FastAPI backend structure, resume-analysis services, JD matching service, the GitHub issue backlog, Assignment 2 design artifacts, and the backend test suite. Some planned requirements are intentionally left for subsequent development iterations. The database-backed history, authentication, PDF report generation, full Docker configuration, and admin features remain planned.
 
 ## Development Workflow
 
@@ -143,13 +185,11 @@ The project follows a GitHub Flow-style workflow:
 
 ## Planned Next Steps
 
-1. Complete and verify backend dependencies and configuration.
-2. Test the complete resume-upload → parsing → ATS-analysis → JD-matching flow.
-3. Add persistent database-backed analysis history.
-4. Implement authentication and profile persistence.
-5. Add PDF report generation.
-6. Complete remaining admin and personalization features.
-7. Finalize Docker and deployment configuration.
+1. Add persistent database-backed analysis history.
+2. Implement authentication and profile persistence.
+3. Add PDF report generation.
+4. Complete remaining admin and personalization features.
+5. Finalize Docker and deployment configuration.
 
 ## Project Vision
 
